@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+Assessmet Details : 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Make a react project from scratch.
+Make a project where you need to have few components.
+1. Container – which will have other components (parent component)
+2. Input component – which will have the input box where the user can enter search query.
+3. List of alphabets (A – Z) – this component will hold the list of alphabets from A - Z. (DON’T USE
+DROPDOWN for this)
+4. List component – here the list of search results will be displayed.
+- Make a JSON file containing few products details (around 20 to 30) [ can use
+https://fakestoreapi.com/products)
+- Create a service file from where the API would be called. [ APIs should not be called from the
+component directly]
+- Now in the list component display the result of the of the API in table with its image [ use lazy loading
+for images]
+- In search input if user enters any search text list the result accordingly.
+- From the list of alphabets if user selects alphabet show products in the list component starting with
+alphabet only.
+Note:
+- Use Axios with auto timeout of 1min [ if due to any reason the API was not able to return response in 1
+min stop it and show a message to user]
+- Use redux / context APIs for data passing don’t use props.
+- Structure the app such that UI layer, Business logic & service layer are totally different.
+- Use proper coding standards.
+- Create a proper readme in the project by reading which anyone can setup the project.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+To accomplish this task, we need to create several components and files with specific functionalities. Here's a high-level outline :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create Components:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ContainerComponent: Parent component holding other components.
+InputComponent: Component for user input.
+AlphabetListComponent: Component displaying the list of alphabets.
+ListComponent: Component displaying the list of search results.
 
-### `npm test`
+Create JSON File:
+Create a JSON file containing product details fetched from the API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Service File:
+Create a service file to handle API calls using Axios. Set a timeout of 1 minute for API calls.
 
-### `npm run build`
+Redux / Context API:
+Set up Redux or Context API for managing state across components.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+UI Structure:
+Organize UI, business logic, and service layers separately.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Search Functionality:
+Implement search functionality in the InputComponent to filter results based on user input.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Alphabet Filter:
+Implement functionality in the AlphabetListComponent to filter products based on selected alphabet.
 
-### `npm run eject`
+README:
+Create a detailed README file explaining how to set up the project, including dependencies, installation steps, and how to run the project.
+Here's a basic structure of how your project directory might look:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+project/
+│
+├── src/
+│   ├── components/
+│   │   ├── ContainerComponent.js
+│   │   ├── InputComponent.js
+│   │   ├── AlphabetListComponent.js
+│   │   ├── ListComponent.js
+│   ├── services/
+│   │   ├── ApiService.js
+│   ├── context
+|   |   |---product.jsx
+│   ├── data/
+│   │   ├── products.json
+│   ├── App.js
+│   ├── index.js
+├── README.md
