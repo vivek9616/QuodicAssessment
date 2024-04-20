@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/quodic_assessment/static/css/main.e580dbbb.css",
-    "main.js": "/quodic_assessment/static/js/main.c09ec232.js",
+    "main.js": "/quodic_assessment/static/js/main.2d728a1d.js",
     "index.html": "/quodic_assessment/index.html",
     "main.e580dbbb.css.map": "/quodic_assessment/static/css/main.e580dbbb.css.map",
-    "main.c09ec232.js.map": "/quodic_assessment/static/js/main.c09ec232.js.map"
+    "main.2d728a1d.js.map": "/quodic_assessment/static/js/main.2d728a1d.js.map"
   },
   "entrypoints": [
     "static/css/main.e580dbbb.css",
-    "static/js/main.c09ec232.js"
+    "static/js/main.2d728a1d.js"
   ]
 }
