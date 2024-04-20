@@ -1,6 +1,6 @@
 import './SearchInput.css';
 import { useContext } from 'react';
-import { productContext } from '../../context/products';
+import { productContext } from '../../context/products.jsx';
 
 function SearchInput() {
   const productState = useContext(productContext);

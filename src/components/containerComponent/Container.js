@@ -1,6 +1,6 @@
-import Alphabet from '../alphabetComponent/Alphabet';
-import SearchInput from '../inputSearchComponent/SearchInput';
-import List from '../listComponent/List';
+import Alphabet from '../alphabetComponent/Alphabet.js';
+import SearchInput from '../inputSearchComponent/SearchInput.js';
+import List from '../listComponent/List.js';
 import './Container.css';
 
 function Container() {

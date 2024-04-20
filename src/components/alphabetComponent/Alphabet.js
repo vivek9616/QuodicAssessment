@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
-import { productContext } from '../../context/products';
+import { productContext } from '../../context/products.jsx';
 import './Alphabet.css'
 
 function Alphabet() {

@@ -1,6 +1,6 @@
 import './App.css';
 import Container from './components/containerComponent/Container';
-import { ProductListProvider } from './context/products';
+import { ProductListProvider } from './context/products.jsx';
 
 function App() {
   return (

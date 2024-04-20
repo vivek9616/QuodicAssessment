@@ -1,6 +1,6 @@
 import './List.css';
 import { useContext } from 'react';
-import { productContext } from '../../context/products';
+import { productContext } from '../../context/products.jsx';
 
 function List() {
   const productState = useContext(productContext);
