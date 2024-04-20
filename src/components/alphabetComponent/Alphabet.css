@@ -1,0 +1,23 @@
+.alphabetKeys {
+    background-color: rgb(144, 190, 192);
+    width: 45px;
+    height: 45px;
+    margin: 1px;
+}
+
+.alphabetKeys:focus {
+    background-color: rgb(47, 65, 233);
+    width: 45px;
+    height: 45px;
+    margin: 1px;
+}
+
+.resetButton {
+    background-color: red;
+    color: black;
+    width: fit-content;
+    height: 50px;
+    font-size: larger;
+    border-radius: 15px;
+    margin: 5px;
+}

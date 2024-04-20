@@ -1,0 +1,36 @@
+.listComponent {
+    justify-content: center;
+    justify-items: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.searchListDisplay {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    flex-direction: row;
+    position: relative;
+    max-width: 100%;
+    justify-items: center;
+}
+
+.productTitle {
+    width: fit-content;
+    max-width: 195px;
+}
+
+.productID {
+    display: inline-flexbox;
+    flex-direction: column;
+    background-color: rgb(161, 168, 168);
+    max-width: fit-content;
+    border: 1px solid black;
+    margin: 1px;
+    margin-bottom: 20px;
+    justify-items: center;
+    height: fit-content;
+    min-height: 350px;
+}
